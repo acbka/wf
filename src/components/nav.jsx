@@ -16,7 +16,7 @@ export const Nav = ({footer}) => {
 
    const handleClick = (e) => {
       let item = e.target.parentNode; 
-      activeMenuItem(item)
+      scrollMenu(item)
    }
 
    const [currentUrl, setUrl] = useState("#home")
@@ -51,7 +51,7 @@ export const Nav = ({footer}) => {
          if (r !== w + t) {
             requestAnimationFrame(step)
          } else { 
-            window.scrollTo(0, t + w - 90) 
+            window.scrollTo(0, t + w - 80) 
          }
       };
       requestAnimationFrame(step);
