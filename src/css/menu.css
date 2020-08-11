@@ -1,0 +1,33 @@
+.nav-menu{
+   display: flex;
+   flex-basis: 100%;
+   flex-grow: 1;
+   align-items: center;
+   margin-right: 2rem;
+}
+.top-menu{
+   display: flex;
+   margin-left: auto;
+}
+.item{
+   padding: 0 10px 0 10px;
+   color: #111;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.item:hover,
+.item.active{
+   color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+   .top-menu{
+      flex-direction: column;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 1rem;
+   }
+   .item{
+      margin: 5px 0;
+   }
+}

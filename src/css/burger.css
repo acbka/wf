@@ -1,0 +1,30 @@
+.burger-wrap{
+   margin: 1.5rem 2rem;
+}
+.burger{
+   position: relative;
+   height: 24px;
+   width: 26px;
+   cursor: pointer;
+}
+.bar{
+   position: absolute;
+   display: block;
+   height: 2px;
+   width: 25px;
+   border-radius: 2px;
+   background: #000;
+   transition: 0.3s ease-in-out;
+}
+.top{
+   top: 0;
+}
+.middle{
+   top: 10px;
+}
+.bottom{
+   top: 20px;
+}
+.burger:hover .bar{
+   background: #fff;
+}

@@ -1,0 +1,35 @@
+.header-content {
+   background: url(../img/title.jpg) no-repeat center top fixed;
+   background-position: center center;
+   background-size: 100%;
+   background-size: cover;
+   margin-top: 0px;
+   padding: 15rem 0 10rem 0;
+   text-align: Left;
+   width: 100%;
+}
+.title{
+   margin-bottom: 5rem;
+}
+.maintitle {
+   color: #7596ef;
+   font-family: 'Pattaya', sans-serif;
+   text-transform: uppercase;
+   font-size: 2.7rem;
+   line-height: 70px;
+   letter-spacing: 3px;
+   text-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+   margin: 0 0 .4rem 2rem;
+}
+
+@media screen and (max-width: 767px) {
+   .header-content {
+      padding-top: 150px;
+   }
+}
+@media screen and (max-width: 320px) {
+   .maintitle {
+      font-size: 1.9rem;
+      line-height: 50px;
+   }
+}
