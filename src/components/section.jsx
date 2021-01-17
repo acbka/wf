@@ -13,6 +13,5 @@ export const Section =({id, name, button, children}) => {
          </div>
       </div>  
    )
-    
- 
+   
 }

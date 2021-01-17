@@ -9,14 +9,18 @@
    display: flex;
    margin-left: auto;
 }
+ul{
+   display: flex;
+}
 .item{
    padding: 0 10px 0 10px;
    color: #111;
    text-decoration: none;
    text-transform: uppercase;
+   cursor: pointer;
+   list-style-type: none;
 }
-.item:hover,
-.item.active{
+.active{
    color: #fff;
 }
 
@@ -26,6 +30,9 @@
       margin: 0 auto;
       text-align: center;
       padding-bottom: 1rem;
+   }
+   ul{
+      flex-direction: column;
    }
    .item{
       margin: 5px 0;

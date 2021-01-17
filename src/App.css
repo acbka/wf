@@ -16,11 +16,11 @@ body{
    font-family: "Montserrat", serif;
 }
 a{
-   color: #fff;
+   
    text-decoration: none;
 }
 a:hover{
-   color: #7596ef;
+   color: #fff;
 }
 h2{
    color: #7596ef;

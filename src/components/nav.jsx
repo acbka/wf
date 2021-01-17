@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import '../css/nav.css';
 import {Burger} from './burger';
 import {Menu} from './menu'
 import logo from '../img/logo.jpg';
 
-export const Nav = ({footer}) => {
+export const Nav = () => {
 
    const [menuState, setMenuState] = useState(false);
    
@@ -14,11 +15,41 @@ export const Nav = ({footer}) => {
       setMenuState(!menuState);
    }
 
+   return (
+      <nav>
+         <a className="navbar-brand" name="#home" href="#home">
+            <Link
+            activeClass="active"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            >
+               <img className="logo" src={logo} alt="logo" />
+            </Link>
+         </a>
+         {(!isMobile || menuState) && <Menu toggle = {toggleMenu}/>}
+         {isMobile && <Burger clickButton={toggleMenu} />}
+      </nav>
+   ) 
+
+   {/*
    const handleClick = (e) => {
       let item = e.target.parentNode; 
       scrollMenu(item)
    }
-
+   
+   const [menuState, setMenuState] = useState(false);
+   
+   const isMobile = window.innerWidth < 1000;
+   
+   const toggleMenu = () => {
+      setMenuState(!menuState);
+   }
+   
+      
+   
    const [currentUrl, setUrl] = useState("#home")
 
    useEffect(() => { 
@@ -67,4 +98,5 @@ export const Nav = ({footer}) => {
          {isMobile && <Burger clickButton={toggleMenu} />}
       </nav>
    )
+   */}
 }
